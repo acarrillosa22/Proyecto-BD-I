@@ -1,0 +1,14 @@
+#alan{
+    font-size: 50px;
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: Arial;
+    color: red;
+    border-radius: 10px;
+    border-color: black;
+    border: 1px solid black;
+}
