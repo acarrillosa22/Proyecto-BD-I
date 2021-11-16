@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
@@ -11,26 +12,34 @@
         <h2>Insertar nuevo usuario</h2>
     </header>
 
-    <form>
-        Nombre:
-        <input type="text" required=""><br>
-        Nueva contraseña:
-        <input type="password" required=""><br>
-        Notas:
-        <input type="text" required=""><br>
-        Tarifa por Hora:
-        <input type="number" required=""><br>
-        Id del Usuario que lo creo:
-        <input type="number" required=""><br>
-        Fecha de la creación:
-        <input type="date" required=""><br>
-        Id del perfil:
-        <input type="number" required=""><br>
-        E-Mail:
-        <input type="text" required=""><br>
-        <input type="submit" value="Insertar"> 
+    <div class="capa">
+        
+        <div class="form">Nombre:<div><input type="text" required=""></div></div>
+        
+        <div class="form">Nueva contraseña:<div><input type="password" required=""></div></div>
+        
+        <div class="form">Notas:<div><input type="password" required=""></div></div>
+        
+        <div class="form">Tarifa por Hora:<div><input type="password" required=""></div></div>
+        
+        <div class="form">Id del Usuario que lo creo:<div><input type="password" required=""></div></div>
+        
+        <div class="form">Fecha de la creación:<div><input type="password" required=""></div></div>
+        
+        <div class="form">Id del perfil:<div><input type="password" required=""></div></div>
+        
+        <button>Insertar</button>
 
-    </form>
+    </div>
+    <br><br>
+
+    <h2>Agregar E-mail a un usuarios</h2>
+    <div class="capa">
+
+        <div class="form">E-mail:<div><input type="text" required=""></div></div>
+
+        <button>Agregar</button>
+    </div>
     
     <a href="../index.html"> Regresar a la pagina principal</a>
 </body>

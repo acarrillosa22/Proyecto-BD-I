@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
@@ -11,36 +12,36 @@
     </header>
 
     <h3>Insertar un cliente</h3>
-    <form>
-        Nombre:
-        <input type="text" required=""><br>
-        Descripcion:
-        <input type="text" required=""><br>
-        Direccion:
-        <input type="text" required=""><br>
-        Nombre de la persona contacto:
-        <input type="text" required=""><br>
-        Notas:
-        <input type="text" required=""><br>
-        <input type="submit" value="Enviar"><br>
-    </form>
+    <div class="capa">
+        <div class="form">Nombre:<div><input type="text" required=""></div></div>
+        
+        <div class="form">Descripcion:<div><input type="text" required=""></div></div>
+        
+        <div class="form">Direccion:<div><input type="text" required=""></div></div>
+        
+        <div class="form">Nombre de la persona contacto:<div><input type="number" required=""></div></div>
+        
+        <div class="form">Notas:<div><input type="text" required=""></div></div>
+        <button>Insertar</button>
+    </div>
     <br><br>
 
     <h3>Agregar E-mail a un cliente</h3>
-    <form>
-        ID del usuario al que pertenecera el email:
-        <input type="number" required=""><br>
-        E-mail:
-        <input type="emai" required=""><br>
-        <input type="submit" value="Agregar">
-    </form>
+    <div class="capa">
+        
+        <div class="form">ID del usuario al que pertenecera el email:<div><input type="text" required=""></div></div>
+
+        <div class="form">E-mail:<div><input type="text" required=""></div></div>
+        
+        <button>Agregar</button>
+    </div>
     <br>
     <h3>Agregar telefono a un usuario</h3>
-    <form>
-        ID del usuario al que pertenecera el telefono:
-        <input type="number" required=""><br>
-        <input type="submit" value="Agregar">
-    </form>
+    <div class="capa">
+        
+        <div class="form">ID del usuario al que pertenecera el telefono:<div><input type="text" required=""></div></div>
+        <button>Agregaar</button>
+    </div>
 
     <a href="../index.html"> Regresar a la pagina principal</a>
 </body>

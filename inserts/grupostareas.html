@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
@@ -11,13 +12,13 @@
         <h2>Insertar nuevo grupo de tareas</h2>
     </header>
 
-    <form>
-        Numero de Tareas:
-        <input type="number" required=""><br>
-        ID del proyecto asignado:
-        <input type="number" required=""><br>
-        <input type="submit" value="Insertar">
-    </form>
+    <div class="capa">
+        
+        <div class="form">Numero de Tareas:<div><input type="text" required=""></div></div>
+        
+        <div class="form">ID del proyecto asignado:<div><input type="text" required=""></div></div>
+        <button>Insertar</button>
+    </div>
 
     <a href="../index.html"> Regresar a la pagina principal</a>
 </body>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
@@ -11,27 +12,28 @@
         <h2>Insertar nuevo Log</h2>
     </header>
 
-    <form>
-        Fecha de Registro
-        <input type="date" required=""><br>
-        Descripcion:
-        <input type="text" required=""><br>
-        Tarifa Total en colones:
-        <input type="text" required=""><br>
-        Tarifa por Hora:
-        <input type="text" required=""><br>
-        fecha/hora inicio:
-        <input type="datetime" required=""><br>
-        fecha/hora finalización:
-        <input type="datetime" required=""><br>
-        ID de la modalidad asignada:
-        <input type="number" required=""><br>
-        ID del Proyecto asignado:
-        <input type="number" required=""><br>
-        ID del Miembro de equipo que creo el log:
-        <input type="number" required=""><br>
-        <input type="submit" value="Insertar">
-    </form>
+    <div class="capa">
+        
+        <div class="form">Fecha de Registro<div><input type="date" required=""></div></div>
+        
+        <div class="form">Descripcion:<div><input type="text" required=""></div></div>
+        
+        <div class="form">Tarifa Total en colones:<div><input type="number" required=""></div></div>
+        
+        <div class="form">Tarifa por Hora:<div><input type="number" required=""></div></div>
+        
+        <div class="form">fecha/hora inicio:<div><input type="datetime" required=""></div></div>
+        
+        <div class="form">fecha/hora finalización:<div><input type="datetime" required=""></div></div>
+        
+        <div class="form">ID de la modalidad asignada:<div><input type="number" required=""></div></div>
+        
+        <div class="form">ID del Proyecto asignado:<div><input type="number" required=""></div></div>
+        
+        <div class="form">ID del Miembro de equipo que creo el log:<div><input type="number" required=""></div></div>
+        
+        <button>Insertar</button>
+    </div>
 
     <a href="../index.html"> Regresar a la pagina principal</a>
 
