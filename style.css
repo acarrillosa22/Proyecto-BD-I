@@ -23,7 +23,12 @@
 }
 
 .titulos{
-    font-family: 'Times New Roman';
+    font-family: 'Arial';
+    text-align: center;
+    background-color: blue;
+    border: 3px solid rgb(51, 44, 155);
+    border-radius: 10px;
+
 }
 
 
