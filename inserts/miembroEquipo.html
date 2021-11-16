@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <header>
@@ -11,15 +12,15 @@
         <h2>Insertar nuevo Miembro de Equipo</h2>
     </header>
 
-    <form>
-        ID de Usuario:
-        <input type="number" required=""><br>
-        ID del usuario que lo asigno a su proyecto:
-        <input type="number" required=""><br>
-        ID Equipo asignado (pude estar vacio):
-        <input type="number" required=""><br>
-        <input type="submit"><br>
-    </form>
+    <div class="capa">
+        
+        <div class="form">ID de Usuario:<div><input type="number" id="ID_usuarios_miembro" required=""></div></div>
+        
+        <div class="form">ID del usuario que lo asigno a su proyecto:<div><input type="number" id="ID_usuario_asigno_miembro" required=""></div></div>
+        
+        <div class="form">ID Equipo asignado (pude estar vacio):<div><input type="number" id="ID_equipo_miembro" required=""></div></div>
+        <button>Insertar</button>
+    </div>
 
     <a href="../index.html"> Regresar a la pagina principal</a>
 </body>
