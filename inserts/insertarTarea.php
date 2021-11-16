@@ -2,10 +2,12 @@
 include '../includes/databaseConnection.php';
 $conn = conectar();
 
-$idPerfil = 1;
-$tipo = "PM";
+$descripcion = "unatareafacil";
+$tarifaHora = 1000;
+$tipo = 'Especifica';
+$componeGrupo = null;
 
-$tsql = "ins_perfil '$tipo'";
+$tsql = "ins_tareas '$descripcion', '$tarifaHora', '$tipo', '$componeGrupo'";
 
 $res = sqlsrv_query($conn, $tsql);
 
