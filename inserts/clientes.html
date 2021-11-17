@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="titulos">
+            <h1>Clientes</h1>
+            <h2>Bienvenid@ a la tablas de los clientes</h2>
+        </div>
+    </header>
+
+    <br><br>
+    <div class="capa">
+        <h3>Insertar un cliente</h3>
+
+        <div class="form"><div>ID</div><div><select name="" id="ID_clientes" onchange=""></select></div></div>
+
+        <div class="form">Nombre:<div><input type="text" id="Nombre_Cliente" required=""></div></div>
+        
+        <div class="form">Descripcion:<div><input type="text" id="Descripcion_Cliente" required=""></div></div>
+        
+        <div class="form">Direccion:<div><input type="text" id="Direccion_Cliente" required=""></div></div>
+        
+        <div class="form">Nombre de la persona contacto:<div><input type="text" id="Contacto_Cliente" required=""></div></div>
+        
+        <div class="form">Notas:<div><input type="text" id="Notas_Cliente" required=""></div></div>
+        <button onclick="">Insertar</button>
+        <button>Modificar</button>
+        <button>Borrar</button>
+    </div>
+    <br><br>
+
+    <h3>Agregar E-mail a un cliente</h3>
+    <div class="capa">
+        
+        <div class="form">ID del usuario al que pertenecera el email:<div><input type="text" id="ID_email_Cliente" required=""></div></div>
+
+        <div class="form">E-mail:<div><input type="text" id="Email_Cliente" required=""></div></div>
+        
+        <button onclick="">Agregar</button>
+        <button>Modificar</button>
+        <button>Borrar</button>
+    </div>
+    <br>
+    <h3>Agregar telefono a un usuario</h3>
+    <div class="capa">
+        
+        <div class="form">ID del usuario al que pertenecera el telefono:<div><input type="text" id="ID_telefono_Cliente" required=""></div></div>
+        
+        <div class="form">Numero de telefono:<div><input type="number" id="telefono_Cliente" required=""></div></div>
+        
+        <button onclick="">Agregaar</button>
+        <button>Modificar</button>
+        <button>Borrar</button>
+    </div>
+
+    <a href="../index.html"> Regresar a la pagina principal</a>
+</body>
+</html>
