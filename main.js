@@ -102,7 +102,8 @@ function verClientes()
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() 
     {
-        paciente=eval ("("+this.responseText+")");
+        cliente=eval ("("+this.responseText+")");
+        console.log(cliente);
         document.getElementById('Nombre_Cliente').value=cliente.nombre;
         document.getElementById('Descripcion_Cliente').value=cliente.descripcion;
         document.getElementById('Direccion_Cliente').value=cliente.dirrecion;
@@ -110,6 +111,28 @@ function verClientes()
         document.getElementById('Notas_Cliente').value=cliente.notas;
     }
     url="../getters/getClientes.php?id="+document.getElementById('ID_clientes').value;
+    xhttp.open("GET", url , true);
+    xhttp.send();
+}
+
+function insertarCliente() 
+{
+    const xhttp = new XMLHttpRequest();
+    
+    nombre=document.getElementById('Nombre_Cliente').value;
+    descripcion=document.getElementById('Descripcion_Cliente').value;
+    personaContacto=document.getElementById('Contacto_Cliente').value;
+    direccion=document.getElementById('Direccion_Cliente').value;
+    notas=document.getElementById('Notas_Cliente').value;
+    url="../inserts/insertarCliente.php?"
+    url=url+"&nombre="+nombre;
+    url=url+"&descripcion="+descripcion;
+    url=url+"&direccion="+direccion;
+    url=url+"&personaContacto="+personaContacto;
+    url=url+"&notas="+notas;
+
+    document.getElementById('Nombre_Cliente').value = "";
+
     xhttp.open("GET", url , true);
     xhttp.send();
 }

@@ -2,23 +2,19 @@
 include '../includes/databaseConnection.php';
 $conn = conectar();
 
-$idCliente = 1;
-$nombre = "Pepe";
-$descripcion = "pepeelpepo";
-$personaContacto = "pa";
-$direccion = "pepelandia";
-$notas = "peloverde";
+//$idCliente = $_GET['cedula'];
+$nombre = $_GET['nombre'];
+$descripcion = $_GET['descripcion'];
+$personaContacto = $_GET['personaContacto'];
+$direccion = $_GET['direccion'];
+$notas = $_GET['notas'];
 
 $tsql = "ins_cliente '$nombre', '$descripcion', '$direccion',
         '$personaContacto', '$notas'" ;
 
 $res = sqlsrv_query($conn, $tsql);
 
-if (!$res) {
-    print("SQL statement failed with error:\n");
-    print("   ".mssql_get_last_message()."\n");
-  } else {
-    print("One data row inserted.\n");
-  }
+$row = sqlsrv_fetch_array($res, SQLSRV_FETCH_ASSOC); 
+echo(json_encode($row));
 
 ?>

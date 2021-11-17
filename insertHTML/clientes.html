@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <script src="../main.js"></script>
 </head>
-<body>
+<body onload="actualizar_id_cliente()">
     <header>
         <div class="titulos">
             <h1>Clientes</h1>
@@ -23,7 +23,8 @@
         <div class="form">
             <div>ID</div>
             <div id="idsclientes">
-                <select name="" id="ID_clientes" onchange="verClientes() "></select>
+                <select name="" id="ID_clientes" onchange="verClientes()">
+                </select>
             </div>
         </div>
 
@@ -36,7 +37,7 @@
         <div class="form">Nombre de la persona contacto:<div><input type="text" id="Contacto_Cliente" required=""></div></div>
         
         <div class="form">Notas:<div><input type="text" id="Notas_Cliente" required=""></div></div>
-        <button onclick="">Insertar</button>
+        <button onclick="insertarCliente()">Insertar</button>
         <button onclick="actualizar_id_cliente()">Actualizar</button>
         <button>Borrar</button>
     </div>
