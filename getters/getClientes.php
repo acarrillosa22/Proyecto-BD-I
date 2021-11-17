@@ -8,6 +8,7 @@ $tsql = "select nombre, descripcion, dirrecion, persona_contacto, notas from cli
 
 $res = sqlsrv_query($conn, $tsql);
 
+
 if (!$res) {
     print("SQL statement failed with error:\n");
     print("   ".mssql_get_last_message()."\n");
