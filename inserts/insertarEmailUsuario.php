@@ -3,11 +3,9 @@ include '../includes/databaseConnection.php';
 $conn = conectar();
 
 $usuario = 3;
-$asignar = 4;
-$equipo = 3;
-$tareaFavorita = 2;
+$email = 'mucho@texto.com';
 
-$tsql = "ins_Miembro_Equipo '$usuario', '$asignar', '$equipo', '$tareaFavorita'";
+$tsql = "ins_email_usuarios '$usuario', '$email'";
 
 $res = sqlsrv_query($conn, $tsql);
 

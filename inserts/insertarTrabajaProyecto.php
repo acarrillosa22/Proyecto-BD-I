@@ -2,12 +2,10 @@
 include '../includes/databaseConnection.php';
 $conn = conectar();
 
-$usuario = 3;
-$asignar = 4;
-$equipo = 3;
-$tareaFavorita = 2;
+$miembroEquipo = 4;
+$proyecto = 2;
 
-$tsql = "ins_Miembro_Equipo '$usuario', '$asignar', '$equipo', '$tareaFavorita'";
+$tsql = "ins_trabaja_proyecto '$miembroEquipo', '$proyecto'";
 
 $res = sqlsrv_query($conn, $tsql);
 

@@ -1,43 +1,29 @@
 <?php
-//include '../includes/databaseConnection.php';
-//$conn = conectar();
+include '../includes/databaseConnection.php';
+$conn = conectar();
 
 
-// Idlogs int IDENTITY(1,1) not null,
-//     FechaRegistro date not null,
-//     Descripcion varchar(30),
-//     TarifaTotal numeric(10) not null,
-//     TotalHoras int not null,
-// 	fecha_hora_inicio datetime,
-// 	fecha_hora_fin datetime,
-// 	TieneM int not null,--ID de la modalidad del log
-// 	ContenidoProyecto int not null, --ID del proyecto al que pertenece
-// 	Ordenados int,--ID del Miembro de equipo que creo el log
-// )
-
-$fechaRegistro = date("D,M,Y");
 $descripcion = "quiero llorar";
+$fechaRegistro = '12-10-25';
 $tarifaTotal = 1000;
 $totalHoras = 420;
-$fechaHoraInicio = date("D,M,Y");
-$fechaHoraFin = date("D,M,Y");
+$fechaHoraInicio = '12-10-25';
+$fechaHoraFin = '12-10-25';
 $tieneM = 1;
-$contenidoProyecto = 1;
-$ordenados = 1;
+$contenidoProyecto = 2;
+$ordenados = 4;
 
-$tsql = "ins_logs '$fechaRegistro', '$descripcion', '$tarifaTotal', '$totalHoras', '$fechaHoraInicio',
-        '$fechaHoraFin', '$tieneM', '$contenidoProyecto', '$ordenados'";
+
+$tsql = "ins_logs  '$descripcion','$fechaRegistro', '$tarifaTotal', '$totalHoras', '$tieneM', 
+        '$contenidoProyecto', '$ordenados', '$fechaHoraFin', '$fechaHoraInicio'";
 
 $res = sqlsrv_query($conn, $tsql);
 
 if (!$res) {
     print("SQL statement failed with error:\n");
     print("   ".mssql_get_last_message()."\n");
-    } else {
+} else {
     print("One data row inserted.\n");
-    }
-
-       
-
+}
 
 ?>

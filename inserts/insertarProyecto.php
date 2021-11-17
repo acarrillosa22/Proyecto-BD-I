@@ -16,8 +16,8 @@ $res = sqlsrv_query($conn, $tsql);
 if (!$res) {
     print("SQL statement failed with error:\n");
     print("   ".mssql_get_last_message()."\n");
-    } else {
+} else {
     print("One data row inserted.\n");
-    }
+}
 
 ?>

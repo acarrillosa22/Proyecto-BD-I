@@ -2,12 +2,10 @@
 include '../includes/databaseConnection.php';
 $conn = conectar();
 
-$usuario = 3;
-$asignar = 4;
-$equipo = 3;
-$tareaFavorita = 2;
+$numeroTareas = 4;
+$proyectoAsignado = 1;
 
-$tsql = "ins_Miembro_Equipo '$usuario', '$asignar', '$equipo', '$tareaFavorita'";
+$tsql = "ins_Grupo_Tareas '$numeroTareas', '$proyectoAsignado'";
 
 $res = sqlsrv_query($conn, $tsql);
 
@@ -17,4 +15,5 @@ if (!$res) {
 } else {
     print("One data row inserted.\n");
 }
+
 ?>

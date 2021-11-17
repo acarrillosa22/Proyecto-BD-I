@@ -5,7 +5,7 @@ $conn = conectar();
 $descripcion = "unatareafacil";
 $tarifaHora = 1000;
 $tipo = 'Especifica';
-$componeGrupo = null;
+$componeGrupo = 1;
 
 $tsql = "ins_tareas '$descripcion', '$tarifaHora', '$tipo', '$componeGrupo'";
 
