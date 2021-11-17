@@ -25,8 +25,8 @@
 .titulos{
     font-family: 'Arial';
     text-align: center;
-    background-color: blue;
-    border: 3px solid rgb(51, 44, 155);
+    background-color: rgb(50, 50, 119);
+    border: 3px solid rgb(63, 60, 112);
     border-radius: 10px;
 
 }
@@ -42,7 +42,7 @@
     padding: 20px;
 }
 
-#capa .form{
+.form{
     display: block;
     padding: 10px;
     border-bottom: 3px solid burlywood;
