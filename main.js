@@ -11,7 +11,7 @@ function actualizar_id_cliente()
     {
       document.getElementById("idsclientes").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getIDcliente.php", true);
+    xhttp.open("GET", "../getters/getIDcliente.php", true);
     xhttp.send();
 }
 
@@ -21,7 +21,7 @@ function actualizar_id_Equipo(){
     {
       document.getElementById("ID_equipo").innerHTML = this.responseText;
     }
-    xhttp.open("GET","getters/getIDEquipo.php", true);
+    xhttp.open("GET","../getters/getIDEquipo.php", true);
     xhttp.send();
 }
 
@@ -31,7 +31,7 @@ function actualizar_id_Grupo(){
     {
       document.getElementById("ID_Miembro_Equipo").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getMiembro.php", true);
+    xhttp.open("GET", "../getters/getMiembro.php", true);
     xhttp.send();
 }
 
@@ -41,7 +41,7 @@ function actualizar_id_Miembro(){
     {
       document.getElementById("ID_Grupos_Tareas").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getIDGrupo.php", true);
+    xhttp.open("GET", "../getters/getIDGrupo.php", true);
     xhttp.send();
 }
 
@@ -51,7 +51,7 @@ function actualizar_id_Modalidad(){
     {
       document.getElementById("ID_Modalidad").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getIDModalidad.php", true);
+    xhttp.open("GET", "../getters/getIDModalidad.php", true);
     xhttp.send();
 }
 
@@ -61,7 +61,7 @@ function actualizar_id_proyecto(){
     {
       document.getElementById("ID_Proyecto").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getIDproyecto.php", true);
+    xhttp.open("GET", "../getters/getIDproyecto.php", true);
     xhttp.send();
 }
 
@@ -71,7 +71,7 @@ function actualizar_id_usuario(){
     {
       document.getElementById("ID_Usuarios").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getIDUsuario.php", true);
+    xhttp.open("GET", "../getters/getIDUsuario.php", true);
     xhttp.send();
 }
 
