@@ -109,7 +109,7 @@ function verClientes()
         document.getElementById('Contacto_Cliente').value=cliente.persona_contacto;
         document.getElementById('Notas_Cliente').value=cliente.notas;
     }
-    url="getters/getClientes.php?id="+document.getElementById('ID_clientes').value;
+    url="../getters/getClientes.php?id="+document.getElementById('ID_clientes').value;
     xhttp.open("GET", url , true);
     xhttp.send();
 }
