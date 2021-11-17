@@ -5,6 +5,7 @@
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,12 @@
     <div class="capa">
         <h3>Insertar usuario:</h3>
 
-        <div class="form"><div>ID</div><div><select name="" id="ID_Usuarios" onchange=""></select></div></div>
+        <div class="form">
+            <div>ID</div>
+            <div id="idUsuario">
+                <select name="" id="ID_Usuarios" onchange=""></select>
+            </div>
+        </div>
         
         <div class="form">Nombre:<div><input type="text" id="Nombre_usuario" required=""></div></div>
         
@@ -36,6 +42,7 @@
         <button onclick="">Insertar</button>
         <button>Modificar</button>
         <button>Borrar</button>
+        <button onclick=" actualizar_id_usuario()">Actualizar ID</button>
 
     </div>
     <br><br>

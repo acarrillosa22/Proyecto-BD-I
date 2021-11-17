@@ -5,6 +5,7 @@
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -17,13 +18,18 @@
     <div class="capa">
             <h3>Insertar nuevo tipo de modalidad</h3>
             
-            <div class="form"><div>ID</div><div><select name="" id="ID_Modalidad" onchange=""></select></div></div>
+            <div class="form">
+                <div>ID</div>
+                <div id="idsModalidad">
+                    <select name="" id="ID_Modalidad" onchange=""></select>
+                </div>
+            </div>
             
             <div class="form"><div>Tipo:</div><div><input type="text" id="Tipo_modalidad" required=""></div></div>
             <br>
             <button onclick="">Insertar</button>
-            <button>Modificar</button>
             <button>Borrar</button>
+            <button onclick="actualizar_id_Modalidad()">Actualizar</button>
         </div>
     </div> 
     <a href="../index.html"> Regresar a la pagina principal</a>

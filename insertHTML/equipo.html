@@ -5,6 +5,7 @@
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +18,11 @@
     <div class="capa">
         <h3>Insertar equipos de trabajo</h3>
 
-        <div class="form"><div>ID</div><div><select name="" id="ID_equipo" onchange=""></select></div></div>
+        <div class="form">
+            <div>ID</div>
+            <div id="idsEquipo">
+                <select name="" id="ID_equipo" onchange=""></select>
+            </div></div>
 
         <div class="form">Numero de miembros de equipo:<div><input type="number" id="miembros_equipo" required=""></div></div>
         
@@ -25,6 +30,7 @@
         <button onclick="">Insertar</button>
         <button>Modificar</button>
         <button>Borrar</button>
+        <button onclick="actualizar_id_Equipo()">Actualizar ID</button>
     </div>
     <a href="../index.html"> Regresar a la pagina principal</a>
 </body>

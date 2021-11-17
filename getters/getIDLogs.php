@@ -2,7 +2,7 @@
 include '../includes/databaseConnection.php';
 $conn=conectar();
 
-$tsql="select Idlogs from clientes order by Idlogs";
+$tsql="select Idlogs from logs";
 $getResults= sqlsrv_query($conn,$tsql) or die('Error');
 
 while($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
