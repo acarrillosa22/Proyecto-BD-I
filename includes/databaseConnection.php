@@ -1,9 +1,9 @@
 <?php
 
-$dbServerName = "localhost";
-$dbUsername = "";
-$dbPassword = "";
-$dbName = "ProyectoBasesAJP"
+$dbServerName = ".";
+$dbUsername = "sa";
+$dbPassword = "Quesada123";
+$dbName = "ProyectoBasesAJP";
 
 $connectionOptions = array(
     "Database" => "ProyectoBasesAJP", 

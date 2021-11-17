@@ -11,7 +11,7 @@ function actualizar_id_cliente()
     {
       document.getElementById("idsclientes").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "getters/getIDcliente.php", true);
+    xhttp.open("GET", "getIDcliente.php", true);
     xhttp.send();
 }
 
