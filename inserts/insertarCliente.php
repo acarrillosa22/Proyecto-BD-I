@@ -9,8 +9,8 @@ $personaContacto = "pa";
 $direccion = "pepelandia";
 $notas = "peloverde";
 
-$tsql = "ins_cliente '$nombre', '$descripcion', '$personaContacto', 
-        '$direccion', '$notas'" ;
+$tsql = "ins_cliente '$nombre', '$descripcion', '$direccion',
+        '$personaContacto', '$notas'" ;
 
 $res = sqlsrv_query($conn, $tsql);
 
