@@ -2,17 +2,14 @@
 include '../includes/databaseConnection.php';
 $conn = conectar();
 
-$cliente = 1;
-$email = 'mucho@texto.com';
+$cliente = $_GET['cliente'];
+$email = $_GET['email'];
 
 $tsql = "ins_emails_cliente '$cliente', '$email'";
 
 $res = sqlsrv_query($conn, $tsql);
 
-if (!$res) {
-    print("SQL statement failed with error:\n");
-    print("   ".mssql_get_last_message()."\n");
-} else {
-    print("One data row inserted.\n");
-}
+$row = sqlsrv_fetch_array($res, SQLSRV_FETCH_ASSOC); 
+echo(json_encode($row));
+
 ?>

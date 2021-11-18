@@ -3,15 +3,16 @@ include '../includes/databaseConnection.php';
 $conn = conectar();
 
 
-$descripcion = "quiero llorar";
-$fechaRegistro = '12-10-25';
-$tarifaTotal = 1000;
-$totalHoras = 420;
-$fechaHoraInicio = '12-10-25';
-$fechaHoraFin = '12-10-25';
-$tieneM = 1;
-$contenidoProyecto = 2;
-$ordenados = 4;
+$descripcion = $_GET['descripcion'];
+$fechaRegistro = strtotime($_GET['fecha_registro']);
+$fechaRegistro = date('Y-m-d H:i:s', $fechaRegistro);
+$tarifaTotal = $_GET['tarifaTotal'];
+$totalHoras = $_GET['totalHoras'];
+$fechaHoraInicio = '12-5-26';
+$fechaHoraFin = '12-5-26';
+$tieneM = $_GET['tieneM'];
+$contenidoProyecto = $_GET['contenidoProyecto'];
+$ordenados = $_GET['ordenados'];
 
 
 $tsql = "ins_logs  '$descripcion','$fechaRegistro', '$tarifaTotal', '$totalHoras', '$tieneM', 
@@ -19,11 +20,7 @@ $tsql = "ins_logs  '$descripcion','$fechaRegistro', '$tarifaTotal', '$totalHoras
 
 $res = sqlsrv_query($conn, $tsql);
 
-if (!$res) {
-    print("SQL statement failed with error:\n");
-    print("   ".mssql_get_last_message()."\n");
-} else {
-    print("One data row inserted.\n");
-}
+$row = sqlsrv_fetch_array($res, SQLSRV_FETCH_ASSOC); 
+echo(json_encode($row));
 
 ?>

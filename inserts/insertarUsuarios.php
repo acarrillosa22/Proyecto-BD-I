@@ -3,24 +3,19 @@ include '../includes/databaseConnection.php';
 $conn = conectar();
 
 
-$contrasena = "i wanna die";
-$nombre = "el pepe";
-$notas = "eh puto";
-$tarifaHora = 100;
-$idUsuarioReferencia = 4;
-$registroCreacion = '12-10-25';
-$tienePerfil = 1;
+$contrasena = $_GET['contrasena'];
+$nombre = $_GET['nombre'];
+$notas = $_GET['notas'];
+$tarifaHora = $_GET['tarifaHora'];
+$idUsuarioReferencia = $_GET['id_referencia'];
+$registroCreacion = '12-4-21'; //dato quemado para evitar problemas
+$tienePerfil = $_GET['tienePerfil'];
 
 $tsql = "ins_usuarios '$contrasena', '$nombre', '$notas', '$tarifaHora', '$idUsuarioReferencia', 
         '$registroCreacion', '$tienePerfil'";
 
 $res = sqlsrv_query($conn, $tsql);
 
-if (!$res) {
-    print("SQL statement failed with error:\n");
-    print("   ".mssql_get_last_message()."\n");
-} else {
-    print("One data row inserted.\n");
-}
-
+$row = sqlsrv_fetch_array($res, SQLSRV_FETCH_ASSOC); 
+echo(json_encode($row));
 ?>

@@ -29,17 +29,17 @@
         
         <div class="form">Nueva contraseña:<div><input type="password" id="Contrasena_usuarios" required=""></div></div>
         
-        <div class="form">Notas:<div><input type="password" id="Notas_usuario" required=""></div></div>
+        <div class="form">Notas:<div><input type="text" id="Notas_usuario" required=""></div></div>
         
-        <div class="form">Tarifa por Hora:<div><input type="password" id="Tarifa_usuario" required=""></div></div>
+        <div class="form">Tarifa por Hora:<div><input type="number" id="Tarifa_usuario" required=""></div></div>
         
-        <div class="form">Id del Usuario que lo creo:<div><input type="password" id="ID_usuario_creador_usuario" required=""></div></div>
+        <div class="form">Id del Usuario que lo creo:<div><input type="number" id="ID_usuario_creador_usuario" required=""></div></div>
         
-        <div class="form">Fecha de la creación:<div><input type="password" id="Fecha_creacion_usuario" required=""></div></div>
+        <div class="form">Fecha de la creación:<div><input type="date" id="Fecha_creacion_usuario" required=""></div></div>
         
-        <div class="form">Id del perfil:<div><input type="password" id="ID_perfil_usuario" required=""></div></div>
+        <div class="form">Id del perfil:<div><input type="number" id="ID_perfil_usuario" required=""></div></div>
         
-        <button onclick="">Insertar</button>
+        <button onclick="insertarUsuarios()">Insertar</button>
         <button>Modificar</button>
         <button>Borrar</button>
         <button onclick=" actualizar_id_usuario()">Actualizar ID</button>
